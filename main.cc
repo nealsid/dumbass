@@ -12,7 +12,8 @@ int main(int argc, char* argv[]) {
 
   auto tokenList = tokenizeFile(argv[1]);
 
-  for (auto t : tokenList) {
-    cout << TokenTypeString(t.tokenType) << endl;
-  }
+  std::for_each(tokenList.begin(), tokenList.end(),
+		[] (auto t) {
+		  cout << TokenTypeString(t.tokenType) << endl;
+		});
 }
