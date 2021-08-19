@@ -1,0 +1,3 @@
+int main (foo bar) {
+    printf("hello, world!");
+}
